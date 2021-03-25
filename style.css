@@ -34,6 +34,7 @@ body {
   justify-content: center;
 
   background: linear-gradient(to bottom, var(--SoftViolet), var(--SoftBlue));
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -136,4 +137,17 @@ body {
 
 .active > .accordian_panel {
   display: block;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .container {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+  }
 }
